@@ -6,15 +6,20 @@
 }
 
 :root {
-    --primary-color: #472836;
-    --secondary-color: #6B4A5A;
-    --accent-color: #8B6478;
-    --dark-bg: #2D1B24;
-    --light-bg: #F9F9F9;
+    /* CMU AI Safety Color Scheme */
+    --primary-color: #4a3d52;
+    --secondary-color: #6b5970;
+    --accent-color: #d4a574;
+    --dark-bg: #3c3444;
+    --light-bg: #f5f1eb;
     --white: #FFFFFF;
-    --text-dark: #333333;
-    --text-light: #666666;
-    --border-color: #E0E0E0;
+    --text-dark: #3c3444;
+    --text-light: #5a4d5e;
+    --text-muted: #8b7a85;
+    --border-color: #ddd4c7;
+    --bg-secondary: #ede8e0;
+    --bg-tertiary: #e8e2d5;
+    --border-highlight: #c9bfb0;
 }
 
 html {
@@ -25,7 +30,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
-    background-color: var(--white);
+    background-color: var(--light-bg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,8 +73,10 @@ a:hover {
 
 /* Navigation */
 .navbar {
-    background-color: var(--white);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(245, 241, 235, 0.9);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 10px rgba(60, 52, 68, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -112,7 +119,7 @@ a:hover {
 .nav-link:hover,
 .nav-link.active {
     color: var(--primary-color);
-    background-color: rgba(71, 40, 54, 0.05);
+    background-color: rgba(74, 61, 82, 0.05);
 }
 
 .nav-toggle {
@@ -144,7 +151,7 @@ a:hover {
 .hero-image {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--accent-color) 100%);
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
     position: relative;
     display: flex;
     align-items: center;
@@ -221,7 +228,7 @@ a:hover {
 
 /* Mission Section */
 .mission-section {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 100%);
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--secondary-color) 100%);
     color: var(--white);
     padding: 5rem 0;
 }
@@ -251,7 +258,7 @@ a:hover {
 /* Info Cards Section */
 .info-cards-section {
     padding: 5rem 0;
-    background-color: var(--white);
+    background-color: var(--light-bg);
 }
 
 .info-grid {
@@ -264,8 +271,8 @@ a:hover {
 .info-card {
     padding: 2rem;
     border-radius: 12px;
-    background: var(--white);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    background: var(--bg-secondary);
+    box-shadow: 0 4px 20px rgba(60, 52, 68, 0.08);
     transition: all 0.3s ease;
     border: 1px solid var(--border-color);
 }
@@ -317,7 +324,7 @@ a:hover {
 }
 
 .application-note {
-    background: linear-gradient(135deg, rgba(71, 40, 54, 0.05) 0%, rgba(107, 74, 90, 0.05) 100%);
+    background: var(--bg-tertiary);
     padding: 2rem;
     border-radius: 12px;
     border-left: 4px solid var(--primary-color);
@@ -332,7 +339,7 @@ a:hover {
 /* Team Section */
 .team-section {
     padding: 5rem 0;
-    background-color: var(--white);
+    background-color: var(--light-bg);
 }
 
 .team-intro {
@@ -363,7 +370,7 @@ a:hover {
     text-align: center;
     padding: 2rem 1rem;
     border-radius: 12px;
-    background: var(--light-bg);
+    background: var(--bg-secondary);
     transition: all 0.3s ease;
     border: 2px solid transparent;
 }
@@ -371,7 +378,7 @@ a:hover {
 .team-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary-color);
-    box-shadow: 0 8px 25px rgba(71, 40, 54, 0.15);
+    box-shadow: 0 8px 25px rgba(60, 52, 68, 0.15);
 }
 
 .team-avatar {
@@ -393,7 +400,7 @@ a:hover {
 }
 
 .team-join {
-    background: linear-gradient(135deg, rgba(71, 40, 54, 0.05) 0%, rgba(107, 74, 90, 0.05) 100%);
+    background: var(--bg-tertiary);
     padding: 2.5rem;
     border-radius: 12px;
     text-align: center;
@@ -449,7 +456,7 @@ a:hover {
 .partner-placeholder {
     width: 200px;
     height: 80px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
     color: var(--white);
     display: flex;
     align-items: center;
@@ -457,12 +464,12 @@ a:hover {
     border-radius: 8px;
     font-family: 'Comfortaa', cursive;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(60, 52, 68, 0.1);
 }
 
 /* Questions Section */
 .questions-section {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--primary-color) 100%);
+    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--secondary-color) 100%);
     color: var(--white);
     padding: 4rem 0;
     text-align: center;
@@ -486,7 +493,7 @@ a:hover {
 /* Social Section */
 .social-section {
     padding: 3rem 0;
-    background-color: var(--white);
+    background-color: var(--light-bg);
     text-align: center;
 }
 
@@ -504,9 +511,9 @@ a:hover {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: var(--light-bg);
+    background: var(--bg-secondary);
     transition: all 0.3s ease;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(60, 52, 68, 0.1);
 }
 
 .social-link:hover {
@@ -521,7 +528,7 @@ a:hover {
 
 /* Newsletter Section */
 .newsletter-section {
-    background: linear-gradient(135deg, rgba(71, 40, 54, 0.05) 0%, rgba(107, 74, 90, 0.05) 100%);
+    background: var(--bg-tertiary);
     padding: 3rem 0;
 }
 
@@ -555,12 +562,12 @@ a:hover {
 .newsletter-input:focus {
     outline: none;
     border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(71, 40, 54, 0.1);
+    box-shadow: 0 0 0 3px rgba(74, 61, 82, 0.1);
 }
 
 .newsletter-button {
     padding: 12px 30px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
     color: var(--white);
     border: none;
     border-radius: 8px;
@@ -573,7 +580,7 @@ a:hover {
 
 .newsletter-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(71, 40, 54, 0.3);
+    box-shadow: 0 4px 15px rgba(60, 52, 68, 0.3);
 }
 
 /* Footer */
@@ -698,7 +705,7 @@ a:hover {
 
 .team-page-section {
     padding: 5rem 0;
-    background-color: var(--white);
+    background-color: var(--light-bg);
 }
 
 .page-title {
@@ -719,7 +726,7 @@ a:hover {
 }
 
 .team-experience {
-    background: linear-gradient(135deg, rgba(71, 40, 54, 0.05) 0%, rgba(107, 74, 90, 0.05) 100%);
+    background: var(--bg-tertiary);
     padding: 2.5rem;
     border-radius: 12px;
     margin-bottom: 3rem;
@@ -760,22 +767,22 @@ a:hover {
 }
 
 .overview-card {
-    background: var(--white);
+    background: var(--bg-secondary);
     padding: 2.5rem;
     border-radius: 12px;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(60, 52, 68, 0.08);
     border-left: 4px solid var(--primary-color);
     transition: all 0.3s ease;
 }
 
 .overview-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 30px rgba(60, 52, 68, 0.12);
 }
 
 .overview-card.highlight {
-    background: linear-gradient(135deg, rgba(71, 40, 54, 0.05) 0%, rgba(107, 74, 90, 0.05) 100%);
+    background: var(--bg-tertiary);
     border-left-color: var(--accent-color);
 }
 
@@ -801,11 +808,11 @@ a:hover {
 /* FAQ Page Styles */
 .faq-section {
     padding: 5rem 0;
-    background-color: var(--white);
+    background-color: var(--light-bg);
 }
 
 .faq-item {
-    background: var(--light-bg);
+    background: var(--bg-secondary);
     padding: 2rem;
     border-radius: 12px;
     margin-bottom: 1.5rem;
@@ -815,7 +822,7 @@ a:hover {
 
 .faq-item:hover {
     transform: translateX(5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(60, 52, 68, 0.1);
 }
 
 .faq-question {
@@ -844,11 +851,11 @@ a:hover {
 }
 
 .apply-notice {
-    background: var(--white);
+    background: var(--bg-secondary);
     padding: 2.5rem;
     border-radius: 12px;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(60, 52, 68, 0.08);
     text-align: center;
 }
 
@@ -859,7 +866,7 @@ a:hover {
 }
 
 .apply-notice.important {
-    background: linear-gradient(135deg, rgba(71, 40, 54, 0.05) 0%, rgba(107, 74, 90, 0.05) 100%);
+    background: var(--bg-tertiary);
     border-left: 4px solid var(--primary-color);
 }
 
@@ -876,16 +883,16 @@ a:hover {
 }
 
 .apply-card {
-    background: var(--white);
+    background: var(--bg-secondary);
     padding: 2.5rem;
     border-radius: 12px;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 20px rgba(60, 52, 68, 0.08);
     border-left: 4px solid var(--primary-color);
 }
 
 .apply-card.highlight {
-    background: linear-gradient(135deg, rgba(71, 40, 54, 0.05) 0%, rgba(107, 74, 90, 0.05) 100%);
+    background: var(--bg-tertiary);
 }
 
 .apply-card-title {
@@ -904,7 +911,7 @@ a:hover {
 /* Resources Page Styles */
 .resources-section {
     padding: 5rem 0;
-    background-color: var(--white);
+    background-color: var(--light-bg);
 }
 
 .resources-grid {
@@ -915,7 +922,7 @@ a:hover {
 }
 
 .resource-card {
-    background: var(--light-bg);
+    background: var(--bg-secondary);
     padding: 2rem;
     border-radius: 12px;
     text-align: center;
@@ -926,7 +933,7 @@ a:hover {
 .resource-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 30px rgba(60, 52, 68, 0.15);
 }
 
 .resource-icon {
@@ -962,7 +969,7 @@ a:hover {
 /* Fellows Page Styles */
 .fellows-section {
     padding: 5rem 0;
-    background: linear-gradient(135deg, var(--light-bg) 0%, var(--white) 100%);
+    background: var(--light-bg);
 }
 
 .cohort-section {
@@ -986,20 +993,20 @@ a:hover {
 }
 
 .fellow-card {
-    background: var(--white);
+    background: var(--bg-secondary);
     padding: 1.5rem 1rem;
     border-radius: 12px;
     text-align: center;
     font-size: 2.5rem;
     transition: all 0.3s ease;
     border: 2px solid transparent;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(60, 52, 68, 0.05);
 }
 
 .fellow-card:hover {
     transform: translateY(-5px) scale(1.05);
     border-color: var(--primary-color);
-    box-shadow: 0 8px 25px rgba(71, 40, 54, 0.2);
+    box-shadow: 0 8px 25px rgba(60, 52, 68, 0.2);
 }
 
 .fellow-name {
@@ -1011,7 +1018,7 @@ a:hover {
 }
 
 .cohort-stats {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
     padding: 3rem;
     border-radius: 12px;
     margin-top: 4rem;
