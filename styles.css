@@ -151,7 +151,7 @@ a:hover {
 .hero-image {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+    background: radial-gradient(ellipse at top, var(--bg-secondary) 0%, var(--light-bg) 50%);
     position: relative;
     display: flex;
     align-items: center;
@@ -164,14 +164,18 @@ a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background-image:
+        linear-gradient(rgba(74, 61, 82, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(74, 61, 82, 0.1) 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 0.3;
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
     text-align: center;
-    color: var(--white);
+    color: var(--text-dark);
     padding: 0 20px;
     max-width: 900px;
     animation: fadeInUp 1s ease;
@@ -181,14 +185,14 @@ a:hover {
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: var(--text-dark);
 }
 
 .hero-subtitle {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.6;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    color: var(--text-light);
 }
 
 /* Notice Section */
@@ -228,7 +232,7 @@ a:hover {
 
 /* Mission Section */
 .mission-section {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #2C2C2C 0%, #4B4B4B 100%);
     color: var(--white);
     padding: 5rem 0;
 }
@@ -456,7 +460,7 @@ a:hover {
 .partner-placeholder {
     width: 200px;
     height: 80px;
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #C41230 0%, #8B2332 100%);
     color: var(--white);
     display: flex;
     align-items: center;
@@ -469,7 +473,7 @@ a:hover {
 
 /* Questions Section */
 .questions-section {
-    background: linear-gradient(135deg, var(--dark-bg) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #2C2C2C 0%, #4B4B4B 100%);
     color: var(--white);
     padding: 4rem 0;
     text-align: center;
@@ -567,7 +571,7 @@ a:hover {
 
 .newsletter-button {
     padding: 12px 30px;
-    background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, #C41230 0%, #8B2332 100%);
     color: var(--white);
     border: none;
     border-radius: 8px;
