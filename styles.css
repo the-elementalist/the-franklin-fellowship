@@ -232,9 +232,11 @@ a:hover {
 
 /* Mission Section */
 .mission-section {
-    background: linear-gradient(135deg, #2C2C2C 0%, #4B4B4B 100%);
-    color: var(--white);
+    background: var(--bg-tertiary);
+    color: var(--text-dark);
     padding: 5rem 0;
+    border-top: 4px solid var(--accent-color);
+    border-bottom: 4px solid var(--accent-color);
 }
 
 .section-title {
@@ -242,17 +244,20 @@ a:hover {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: left;
+    color: var(--primary-color);
 }
 
 .mission-text {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
     line-height: 1.8;
+    color: var(--text-dark);
 }
 
 .mission-highlight {
     font-size: 1.1rem;
     line-height: 1.8;
+    color: var(--text-dark);
 }
 
 .mission-highlight strong {
@@ -460,7 +465,7 @@ a:hover {
 .partner-placeholder {
     width: 200px;
     height: 80px;
-    background: linear-gradient(135deg, #C41230 0%, #8B2332 100%);
+    background: var(--primary-color);
     color: var(--white);
     display: flex;
     align-items: center;
@@ -469,29 +474,34 @@ a:hover {
     font-family: 'Comfortaa', cursive;
     font-weight: 600;
     box-shadow: 0 4px 15px rgba(60, 52, 68, 0.1);
+    border: 2px solid var(--accent-color);
 }
 
 /* Questions Section */
 .questions-section {
-    background: linear-gradient(135deg, #2C2C2C 0%, #4B4B4B 100%);
-    color: var(--white);
+    background: var(--bg-tertiary);
+    color: var(--text-dark);
     padding: 4rem 0;
     text-align: center;
+    border-top: 4px solid var(--accent-color);
+    border-bottom: 4px solid var(--accent-color);
 }
 
 .questions-text {
     font-size: 1.1rem;
     font-style: italic;
     line-height: 1.8;
+    color: var(--text-dark);
 }
 
 .questions-text a {
-    color: var(--white);
+    color: var(--primary-color);
     text-decoration: underline;
+    font-weight: 600;
 }
 
 .questions-text a:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 /* Social Section */
@@ -571,9 +581,9 @@ a:hover {
 
 .newsletter-button {
     padding: 12px 30px;
-    background: linear-gradient(135deg, #C41230 0%, #8B2332 100%);
+    background: var(--primary-color);
     color: var(--white);
-    border: none;
+    border: 2px solid var(--accent-color);
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
