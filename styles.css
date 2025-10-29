@@ -165,10 +165,10 @@ a:hover {
     right: 0;
     bottom: 0;
     background-image:
-        linear-gradient(rgba(74, 61, 82, 0.1) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(74, 61, 82, 0.1) 1px, transparent 1px);
+        linear-gradient(rgba(74, 61, 82, 0.15) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(74, 61, 82, 0.15) 1px, transparent 1px);
     background-size: 60px 60px;
-    opacity: 0.3;
+    opacity: 0.4;
 }
 
 .hero-content {
@@ -200,6 +200,7 @@ a:hover {
     background-color: var(--light-bg);
     padding: 3rem 0;
     text-align: center;
+    border-top: 1px solid var(--border-color);
 }
 
 .notice-section .container {
@@ -232,9 +233,11 @@ a:hover {
 
 /* Mission Section */
 .mission-section {
-    background: var(--bg-tertiary);
+    background: var(--bg-secondary);
     color: var(--text-dark);
     padding: 5rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .section-title {
