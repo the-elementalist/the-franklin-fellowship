@@ -18,7 +18,7 @@
     --text-muted: #8b7a85;
     --border-color: #ddd4c7;
     --bg-secondary: #ede8e0;
-    --bg-tertiary: #e8e2d5;
+    --bg-tertiary: #ede8e0;
     --border-highlight: #c9bfb0;
 }
 
@@ -235,8 +235,6 @@ a:hover {
     background: var(--bg-tertiary);
     color: var(--text-dark);
     padding: 5rem 0;
-    border-top: 4px solid var(--accent-color);
-    border-bottom: 4px solid var(--accent-color);
 }
 
 .section-title {
@@ -483,8 +481,6 @@ a:hover {
     color: var(--text-dark);
     padding: 4rem 0;
     text-align: center;
-    border-top: 4px solid var(--accent-color);
-    border-bottom: 4px solid var(--accent-color);
 }
 
 .questions-text {
