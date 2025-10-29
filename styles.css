@@ -471,8 +471,7 @@ a:hover {
     border-radius: 8px;
     font-family: 'Comfortaa', cursive;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(60, 52, 68, 0.1);
-    border: 2px solid var(--accent-color);
+    box-shadow: 0 4px 15px rgba(60, 52, 68, 0.15);
 }
 
 /* Questions Section */
@@ -579,7 +578,7 @@ a:hover {
     padding: 12px 30px;
     background: var(--primary-color);
     color: var(--white);
-    border: 2px solid var(--accent-color);
+    border: none;
     border-radius: 8px;
     font-size: 1rem;
     font-weight: 600;
