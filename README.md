@@ -14,10 +14,18 @@ A modern, responsive website inspired by the Sophie Fellowship website. Built wi
 
 ```
 fellowship-website/
-├── index.html      # Main HTML file
-├── styles.css      # All styling and responsive design
-├── script.js       # Interactive functionality
-└── README.md       # This file
+├── index.html       # Homepage
+├── overview.html    # Program overview
+├── schedule.html    # Fellowship schedule
+├── fellows.html     # Fellows information
+├── team.html        # Team members
+├── apply.html       # Application page
+├── faqs.html        # Frequently asked questions
+├── styles.css       # All styling and responsive design
+├── script.js        # Interactive functionality
+├── assets/          # Images and media files
+│   └── logo.png     # Site logo
+└── README.md        # This file
 ```
 
 ## ✨ Key Sections

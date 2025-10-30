@@ -94,10 +94,19 @@ a:hover {
 }
 
 .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-family: 'Comfortaa', cursive;
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-logo {
+    height: 45px;
+    width: auto;
 }
 
 .nav-menu {
@@ -233,10 +242,9 @@ a:hover {
 
 /* Mission Section */
 .mission-section {
-    background: var(--bg-secondary);
+    background: var(--light-bg);
     color: var(--text-dark);
     padding: 5rem 0;
-    border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -263,6 +271,41 @@ a:hover {
 
 .mission-highlight strong {
     font-weight: 700;
+}
+
+/* Naming Story Section */
+.naming-section {
+    padding: 5rem 0;
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+}
+
+.naming-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.naming-title {
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.naming-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    font-weight: 400;
+    text-align: center;
+}
+
+.naming-text em {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--primary-color);
 }
 
 /* Info Cards Section */
@@ -920,62 +963,174 @@ a:hover {
     margin-bottom: 1rem;
 }
 
-/* Resources Page Styles */
-.resources-section {
+/* Schedule Page Styles */
+.schedule-section {
     padding: 5rem 0;
     background-color: var(--light-bg);
 }
 
-.resources-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-}
-
-.resource-card {
+.schedule-info {
     background: var(--bg-secondary);
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--accent-color);
 }
 
-.resource-card:hover {
-    transform: translateY(-10px);
-    border-color: var(--primary-color);
-    box-shadow: 0 10px 30px rgba(60, 52, 68, 0.15);
+.schedule-info p {
+    margin: 0.5rem 0;
+    color: var(--text-dark);
+    font-size: 1rem;
 }
 
-.resource-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.resource-title {
-    font-family: 'Comfortaa', cursive;
-    font-size: 1.3rem;
+.schedule-info strong {
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-.resource-description {
-    color: var(--text-light);
-    margin-bottom: 1.5rem;
+.schedule-table-wrapper {
+    margin: 3rem 0;
+    overflow-x: auto;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(60, 52, 68, 0.08);
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.schedule-table thead {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+.schedule-table th {
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.schedule-table tbody tr {
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s ease;
+}
+
+.schedule-table tbody tr:hover {
+    background-color: var(--bg-secondary);
+}
+
+.schedule-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.schedule-table td {
+    padding: 1.5rem 1.5rem;
+    color: var(--text-dark);
     line-height: 1.6;
 }
 
-.resource-link {
-    display: inline-block;
-    color: var(--primary-color);
+.schedule-table td:first-child {
     font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
+    color: var(--primary-color);
+    white-space: nowrap;
+    width: 100px;
 }
 
-.resource-link:hover {
-    transform: translateX(5px);
+.schedule-table td:nth-child(2) {
+    width: 40%;
+}
+
+.schedule-table td:nth-child(3) {
+    width: 45%;
+    line-height: 1.8;
+}
+
+.schedule-table td strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.table-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.table-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.reading-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.reading-link:hover {
+    text-decoration: underline;
+}
+
+.material-badge {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background: var(--bg-secondary);
+    color: var(--primary-color);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.schedule-note {
+    background: var(--bg-tertiary);
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.schedule-note p {
+    color: var(--text-dark);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.schedule-note strong {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Responsive Schedule Table */
+@media (max-width: 768px) {
+    .schedule-table th,
+    .schedule-table td {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .schedule-table td:first-child {
+        width: 70px;
+        font-size: 0.8rem;
+    }
+    
+    .schedule-table td:nth-child(2),
+    .schedule-table td:nth-child(3) {
+        width: auto;
+    }
+    
+    .reading-link {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+    }
 }
 
 /* Fellows Page Styles */
